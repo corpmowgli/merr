@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive CV - Stealth Mode</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Mission Briefing: Interactive CV</h1>
+      <p>Complete the challenges and unlock the secrets of my professional journey. Use your stealth and speed wisely!</p>
+      <button onclick="startGame()">Start Infiltration</button>
+    </header>
+
+    <section id="game" class="hidden">
+      <h2>Stealth Challenge</h2>
+      <div id="question"></div>
+      <div id="choices"></div>
+      <div id="feedback" class="hidden"></div>
+      <div id="cv-sections" class="hidden">
+        <h3>Unlocked CV Sections</h3>
+        <div id="cv-content"></div>
+      </div>
+    </section>
+
+    <section id="minigame-section" class="hidden">
+      <canvas id="gameCanvas" width="600" height="400"></canvas>
+    </section>
+
+    <footer>
+      <p>Project created by Er rfiki Mohamed</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
